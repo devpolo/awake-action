@@ -1,0 +1,16 @@
+name: 'awake-action'
+description: 'Keep your free server awake'
+inputs:
+  url: 
+    description: 'url to keep awake'
+    required: true
+  cron: 
+    description: 'doc: https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule'
+    required: false
+    default: '15 5 * * *'
+outputs:
+  result:
+    description: 'The result returned by the URL'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
