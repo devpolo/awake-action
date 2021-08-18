@@ -8,9 +8,8 @@ inputs:
   url:
     description: "url to keep awake"
     required: true
-outputs:
-  result:
-    description: "The result returned by the URL"
 runs:
-  using: "node12"
-  main: "dist/index.js"
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.url }}
