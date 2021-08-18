@@ -1,6 +1,7 @@
 FROM alpine
 
-RUN apk add curl
+RUN apk --no-cache add ca-certificates
+RUN apk --no-cache add curl
 
 ADD entrypoint.sh /
 
