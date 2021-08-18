@@ -1,19 +1,16 @@
-name: 'awake-action'
-description: 'Keep your free server awake'
+name: "awake-action"
+description: "Keep your free server awake"
+author: "devpolo"
+branding:
+  icon: "arrow-right"
+  color: "green"
 inputs:
-  url: 
-    description: 'url to keep awake'
+  url:
+    description: "url to keep awake"
     required: true
-  cron: 
-    description: 'doc: https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule'
-    required: false
-    default: '15 5 * * *'
 outputs:
   result:
-    description: 'The result returned by the URL'
+    description: "The result returned by the URL"
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
-branding:
-  icon: 'arrow-right'  
-  color: 'green'
+  using: "node12"
+  main: "dist/index.js"
