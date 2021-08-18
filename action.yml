@@ -1,6 +1,6 @@
 name: "awake-action"
 description: "Keep your free server awake"
-author: "devpolo"
+author: "Paul Crussaire"
 branding:
   icon: "arrow-right"
   color: "green"
