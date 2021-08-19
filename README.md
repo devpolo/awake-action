@@ -11,10 +11,9 @@
 
 At the root of your project, create the file/folders structure: `.github/workflows/awake.yml`
 
-Paste the following lines:
+Paste the following lines into your `awake.yml` file:
 
 ```yml
-# awake.yml
 name: Awake Action
 on:
   schedule:
@@ -37,8 +36,9 @@ In case you don't want your uri to be public, follow the next steps:
 
 Under your repository `Settings` > `Secrets`, click `New repository secret` and add your `SECRET_URI`.
 
+Then paste the following lines into your `awake.yml` file:
+
 ```yml
-# awake.yml
 name: Awake Action
 on:
   schedule:
@@ -56,8 +56,9 @@ jobs:
 
 ## Awake many endpoints
 
+In some cases, your project may run your API and your client in the same repository.
+
 ```yml
-# awake.yml
 name: Awake Action
 on:
   schedule:
