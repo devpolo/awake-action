@@ -14,6 +14,7 @@ At the root of your project, create the file/folders structure: `.github/workflo
 Paste the following lines:
 
 ```yml
+# awake.yml
 name: Awake Action
 on:
   schedule:
@@ -32,9 +33,12 @@ jobs:
 
 ## Use secret url
 
+In case you don't want your uri to be public, follow the next steps:
+
 Under your repository `Settings` > `Secrets`, click `New repository secret` and add your `SECRET_URI`.
 
 ```yml
+# awake.yml
 name: Awake Action
 on:
   schedule:
@@ -53,6 +57,7 @@ jobs:
 ## Awake many endpoints
 
 ```yml
+# awake.yml
 name: Awake Action
 on:
   schedule:
