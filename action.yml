@@ -3,7 +3,7 @@ description: "Keep your free server awake"
 author: "Paul Crussaire"
 branding:
   icon: "arrow-right"
-  color: "green"
+  color: "orange"
 inputs:
   url:
     description: "url to keep awake"
