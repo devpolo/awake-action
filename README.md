@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: main-awake
-        uses: devpolo/awake-action@v1-alpha.4
+        uses: devpolo/awake-action@v1
         with:
           url: "YOUR_URL_TO_AWAKE"
 ```
@@ -54,13 +54,13 @@ jobs:
     steps:
       # awake a secret uri
       - name: secret-awake
-        uses: devpolo/awake-action@v1-alpha.4
+        uses: devpolo/awake-action@v1
         with:
           url: ${{ secrets.SECRET_URI }}
 
       # awake another public uri
       - name: awake-heroku-client
-        uses: devpolo/awake-action@v1-alpha.4
+        uses: devpolo/awake-action@v1
         with:
           url: "YOUR_HEROKU_URL"
 
