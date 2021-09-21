@@ -64,6 +64,6 @@ jobs:
         with:
           url: "YOUR_HEROKU_URL"
 
-      # add uri as many as you want
+      # add as many uri as you want
       # ...
 ```
