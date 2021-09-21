@@ -2,7 +2,7 @@ name: "awake-action"
 description: "Keep your free server awake"
 author: "Paul Crussaire"
 branding:
-  icon: "arrow-right"
+  icon: "activity"
   color: "orange"
 inputs:
   url:
